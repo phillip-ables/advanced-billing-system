@@ -648,7 +648,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jButton5" min="-2" pref="207" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jButton7" min="-2" pref="207" max="-2" attributes="0"/>
+                  <Component id="ExitButton" min="-2" pref="207" max="-2" attributes="0"/>
                   <EmptySpace pref="149" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -661,7 +661,7 @@
                       <Component id="jButton4" alignment="3" max="32767" attributes="0"/>
                       <Component id="jButton5" alignment="3" max="32767" attributes="0"/>
                       <Component id="jButton6" alignment="3" max="32767" attributes="0"/>
-                      <Component id="jButton7" alignment="3" max="32767" attributes="0"/>
+                      <Component id="ExitButton" alignment="3" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -699,7 +699,7 @@
             <Property name="text" type="java.lang.String" value="Reset"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton7">
+        <Component class="javax.swing.JButton" name="ExitButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SansSerif" size="36" style="1"/>
@@ -707,7 +707,7 @@
             <Property name="text" type="java.lang.String" value="Exit"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExitButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

@@ -7,6 +7,7 @@ package OO_Billing_S;
  *
  * @author user
  */
-public class Child_Billing {
+//everything in the parent billing is inherited by the child
+public class Child_Billing extends Parent_Billing{
     
 }
