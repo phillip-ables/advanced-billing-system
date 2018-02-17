@@ -51,7 +51,7 @@ public class Parent_Billing {
         }
     }
     //NUMBERS ONLY
-    public void NumberOnly(java.awt.event.KeyEvent evt){
+    public void NumbersOnly(java.awt.event.KeyEvent evt){
         char iNumber = evt.getKeyChar();
         if(!(iNumber == KeyEvent.VK_BACK_SPACE)
                 || (iNumber == KeyEvent.VK_DELETE)){
