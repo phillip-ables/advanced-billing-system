@@ -3,6 +3,7 @@
  */
 package OO_Billing_S;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -26,17 +27,13 @@ public class Parent_Billing {
     public double priceChrome = 7.8;
     public double costTax = 0.90;
     //create the method calculates the total cost
-    public double itemCost1;
-    public double itemCost2;
-    public double itemCost3;
-    public double itemCost4;
-    public double itemCost5;
+    public double itemCost;
 
 
     
     public double GetAmount() {
-        itemCost5 = Labour + Travel + Plastic + Copper + Chrome;
-        return (itemCost5);
+        itemCost = Labour + Travel + Plastic + Copper + Chrome;
+        return (itemCost);
     }
     public double cFindTax(double cAmount) {
         double FindTax = cAmount - (cAmount * costTax);
@@ -51,6 +48,14 @@ public class Parent_Billing {
         if (JOptionPane.showConfirmDialog(frame, "Confirm if you want to exit","Billing System",
                 JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
             System.exit(0);
+        }
+    }
+    //NUMBERS ONLY
+    public void NumberOnly(java.awt.event.KeyEvent evt){
+        char iNumber = evt.getKeyChar();
+        if(!(iNumber == KeyEvent.VK_BACK_SPACE)
+                || (iNumber == KeyEvent.VK_DELETE)){
+            evt.consume();
         }
     }
 }
